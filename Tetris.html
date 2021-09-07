@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="full-height">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Tetris" />
+	<meta property="og:description" content="Let's enjoy Tetris together!" />	
+
+	<title>Tetris Game</title>
+	<link rel="stylesheet" href="tetris.css" />
+</head>
+<body id="body" data-url="@ViewBag.RequestUrl">
+	<div class="wrapper">
+		<div id="gameText" class="game-text">
+			<span>Game Over</span>
+			<button id="restart">Restart</button>
+		</div>
+		<div class="score">
+			<span>Score: </span>
+			<span id="score">0</span>
+		</div>
+		<div id="playground" class="playground">
+			<ul></ul>
+		</div>
+		<div class="start">
+			<button id="start">Start</button>
+		</div>
+	</div>
+
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="block.js"></script>
+	<script src="tetris.js"></script>
+</body>
+</html>
